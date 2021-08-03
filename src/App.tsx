@@ -1,4 +1,4 @@
-import { Loader } from './Loader';
+import Loader from './LoaderWrapper';
 import { Ring } from './Ring';
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
       }}
     >
       <Loader>
-        <Ring color="white" radius={50} strokeWidth={4} />
+        <Ring color="yellow" radius={100} strokeWidth={10} />
       </Loader>
     </div>
   );

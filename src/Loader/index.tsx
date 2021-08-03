@@ -3,8 +3,6 @@ import { ReactNode, ReactElement, CSSProperties } from 'react';
 import PropTypes from 'prop-types';
 import { jsx } from '@emotion/react';
 
-import './index.css';
-
 interface LoaderProps {
   height?: number;
   width?: number;
@@ -51,4 +49,4 @@ Loader.defaultProps = {
   width: 500,
 };
 
-export { Loader };
+export { Loader, LoaderProps };
