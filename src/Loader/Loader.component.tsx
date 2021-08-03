@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { ReactNode, ReactElement, CSSProperties } from 'react';
 import PropTypes from 'prop-types';
 import { jsx, keyframes } from '@emotion/react';
