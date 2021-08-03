@@ -1,4 +1,4 @@
-import Loader from './LoaderWrapper';
+import { Loader } from './Loader';
 import { Ring } from './Ring';
 
 export default function App() {
