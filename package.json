@@ -1,6 +1,6 @@
 {
   "name": "watney-loaders",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0",
   "description": "watney-loaders allows for customization of a React loader for asynchronous calls",
   "unpkg": "dist/index.js",
   "main": "dist/index.js",
