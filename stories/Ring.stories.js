@@ -13,10 +13,10 @@ const setup = {
 
 export default {
   title: 'Ring',
-  component: RingStory,
+  component: DefaultRing,
 };
 
-export const RingStory = () => {
+export const DefaultRing = () => {
   return (
     <div style={setup}>
       <Loader>
