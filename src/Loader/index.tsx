@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { ReactNode, ReactElement, CSSProperties } from 'react';
 import PropTypes from 'prop-types';
-import { jsx } from '@emotion/react';
+import { jsx, keyframes } from '@emotion/react';
 
 interface LoaderProps {
   height?: number;
@@ -24,13 +24,22 @@ const Loader = (props: LoaderProps): ReactElement => {
   const width = !!providedWidth ? providedWidth : 250;
   const viewBox = `0 0 ${width} ${height}`;
 
+  const rotate = keyframes`
+    100% {
+      transform: rotate(360deg);
+    }
+  `;
+
   return jsx(
     'svg',
     {
       className,
-      height: height,
-      width: width,
-      viewBox: viewBox,
+      css: {
+        height: height,
+        width: width,
+        viewBox: viewBox,
+        animation: `${rotate} 2s linear infinite`,
+      },
       style,
     },
     children
