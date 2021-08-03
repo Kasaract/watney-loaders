@@ -1,7 +1,8 @@
 import { ReactElement, CSSProperties, useContext } from 'react';
 import PropTypes from 'prop-types';
-import { jsx, keyframes } from '@emotion/react';
+import { jsx } from '@emotion/react';
 
+import { dash } from '../utils/keyframes';
 import { LoaderWrapperContext } from '../Loader/Loader.context';
 
 interface RingProps {
@@ -20,23 +21,6 @@ const Ring = (props: RingProps): ReactElement => {
 
   const cx = parentDimensions.width / 2;
   const cy = parentDimensions.height / 2;
-
-  const dash = keyframes`
-    from, 0%, to {
-      stroke-dasharray: 20, 320;
-      stroke-dashoffset: 0;
-    }
-
-    50% {
-      stroke-dasharray: 160, 320;
-      stroke-dashoffset: -160;
-    }
-
-    100% {
-      stroke-dasharray: 320, 320;
-      stroke-dashoffset: -320;
-    }
-  `;
 
   return jsx('circle', {
     className,

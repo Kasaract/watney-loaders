@@ -1,7 +1,8 @@
 import { ReactNode, ReactElement, CSSProperties } from 'react';
 import PropTypes from 'prop-types';
-import { jsx, keyframes } from '@emotion/react';
+import { jsx } from '@emotion/react';
 
+import { rotate } from '../utils/keyframes';
 import {
   LoaderWrapperContext,
   initialLoaderDimensions,
@@ -27,12 +28,6 @@ const Loader = (props: LoaderProps): ReactElement => {
   const height = !!providedHeight ? providedHeight : 250;
   const width = !!providedWidth ? providedWidth : 250;
   const viewBox = `0 0 ${width} ${height}`;
-
-  const rotate = keyframes`
-    100% {
-      transform: rotate(360deg);
-    }
-  `;
 
   const LoaderConsumer = () =>
     jsx(
