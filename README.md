@@ -1,3 +1,5 @@
+`watney-loaders` allows for customization of a React loader for asynchronous calls
+
 ## Installation
 
 #### Using NPM:

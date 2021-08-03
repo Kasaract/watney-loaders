@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { jsx } from '@emotion/react';
 
 import { dash } from '../utils/keyframes';
-import { LoaderWrapperContext } from '../Loader/Loader.context';
+import { LoaderWrapperContext } from '../utils/Loader.context';
 
 interface RingProps {
   color?: string;

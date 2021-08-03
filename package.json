@@ -54,6 +54,10 @@
   "scripts": {
     "build": "babel src -d dist --copy-files",
     "start": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "release:major": "npm version major && git push --tags",
+    "release:minor": "npm version minor && git push --tags",
+    "release:patch": "npm version patch && git push --tags",
+    "release:beta": "npm version prerelease && npm run build && npm publish --tag beta && git push --tags"
   }
 }

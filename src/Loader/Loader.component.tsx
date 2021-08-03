@@ -6,7 +6,7 @@ import { rotate } from '../utils/keyframes';
 import {
   LoaderWrapperContext,
   initialLoaderDimensions,
-} from './Loader.context';
+} from '../utils/Loader.context';
 
 interface LoaderProps {
   height?: number;
