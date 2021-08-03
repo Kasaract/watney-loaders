@@ -1,13 +1,33 @@
 {
   "name": "watney-loaders",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0-alpha",
+  "description": "watney-loaders allows for customization of a React loader for asynchronous calls",
+  "unpkg": "dist/index.js",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kasaract/watney-loaders.git"
+  },
+  "author": {
+    "name": "Gary Nguyen",
+    "url": "https://garynguyen.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kasaract/watney-loaders/issues"
+  },
+  "homepage": "https://github.com/Kasaract/watney-loaders#readme",
+  "keywords": [
+    "react",
+    "react-loader",
+    "react-spinner",
+    "loader",
+    "loading",
+    "spinner",
+    "progress"
+  ],
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "typescript": "^4.3.5"
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "react": "*",
@@ -28,21 +48,12 @@
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "babel-loader": "^8.2.2",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
   },
   "scripts": {
     "build": "babel src -d dist --copy-files",
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kasaract/watney-loaders.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kasaract/watney-loaders/issues"
-  },
-  "homepage": "https://github.com/Kasaract/watney-loaders#readme"
+  }
 }
