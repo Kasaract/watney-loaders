@@ -14,7 +14,7 @@ export default function App() {
       }}
     >
       <Loader>
-        <Ring color="yellow" radius={100} strokeWidth={10} />
+        <Ring />
       </Loader>
     </div>
   );
